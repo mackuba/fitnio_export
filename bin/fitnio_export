@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+lib_dir = File.expand_path(File.join(__FILE__, '..', '..', 'lib'))
+$LOAD_PATH << lib_dir unless $LOAD_PATH.include?(lib_dir)
+
+require 'fitnio_export'
+require 'highline'
+
+console = HighLine.new
+
+puts "Log in to Fitnio:"
+puts "================="
+puts
+
+email = console.ask("Email:")
+puts
+
+password = console.ask("Password:") { |q| q.echo = "*" }
+puts
+
+begin
+  exporter = FitnioExport.new(email, password)
+  exporter.start
+rescue FitnioExport::AuthenticationError => e
+  puts "Error: #{e}"
+end

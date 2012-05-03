@@ -1,0 +1,65 @@
+// Fitnio JSON contains:
+
+{  
+  "centerLatitude": 50.00,
+  "centerLongitude": 20.00,
+  "encodedValues": {
+      "levels": "PPPPPPPPPPPPPPPP...etc.",
+      "points": "some garbage (?)"
+  },
+  "endPoint": POINT,
+  "kmMarkers": [KMPOINT, ...],
+  "maxAltitude": 0.05947,
+  "maxLatitude": 50.00,
+  "maxLongitude": 20.00,
+  "mileMarkers": [MILEPOINT, ...],
+  "minAltitude": 0.05,
+  "minLatitude": 50.00,
+  "minLongitude": 20.00,
+  "points": [POINT, ...],
+  "startPoint": POINT
+}
+
+// POINT structure contains:
+
+{
+  "altitude": 0.057765,  // supposedly in miles above sea level, but it's incorrect anyway
+  "horizontalAccuracy": 17.068495,
+  "latitude": 50.00,
+  "longitude": 20.00,
+  "speed": 0.673063782164638,
+  "state": "A",
+  "timeOffset": 5315663,  # ms since start
+  "used": true,
+  "verticalAccuracy": 23.164149
+}
+
+// KMPOINT structure contains:
+
+{
+  "altitude": 0.0550232085623868,
+  "duration": 390,
+  "formattedDuration": "6:30",  // time to run this 1km section (pace)
+  "index": 1,
+  "latitude": 50.00,
+  "longitude": 20.00,
+  "percentile": -1,
+  "sessionId": 183792,
+  "sessionType": "R",
+  "type": "km"
+}
+
+// MILEPOINT structure contains:
+
+{
+  "altitude": 0.053598,
+  "duration": 625,
+  "formattedDuration": "10:25",
+  "index": 1,
+  "latitude": 50.00,
+  "longitude": 20.00,
+  "percentile": -1,
+  "sessionId": 183792,
+  "sessionType": "R",
+  "type": "mile"
+}
