@@ -29,7 +29,7 @@
   "longitude": 20.00,
   "speed": 0.673063782164638,
   "state": "A",
-  "timeOffset": 5315663,  # ms since start
+  "timeOffset": 5315663,  // ms since start
   "used": true,
   "verticalAccuracy": 23.164149
 }
