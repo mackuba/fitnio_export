@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = "fitnio_export"
   s.version = "1.0"
   s.summary = "A tool for exporting activity data from Fitnio in GPX format (for importing into Runkeeper)"
-  s.homepage = "http://github.com/psionides/fitnio_export"
+  s.homepage = "http://github.com/jsuder/fitnio_export"
 
   s.author = "Jakub Suder"
   s.email = "jakub.suder@gmail.com"
