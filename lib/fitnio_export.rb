@@ -21,7 +21,7 @@ class FitnioExport
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx
   version="1.1"
-  creator="fitnio_export (http://github.com/psionides/fitnio_export)"
+  creator="fitnio_export (http://github.com/jsuder/fitnio_export)"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://www.topografix.com/GPX/1/1"
   xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
